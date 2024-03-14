@@ -1,11 +1,10 @@
 import React from "react";
-import Navbar from "./Navbar";
+
 import "./Main.css";
 
 export default function Main() {
   return (
     <div className="Main">
-      <Navbar />
       <div className="main-landing">
         <div className="frameOne">
           <p>

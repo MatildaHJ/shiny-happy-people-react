@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import "./Navbar.css";
 
-export default function CustomNavbar() {
+export default function CustomNavbar({ handleToggleMenu }) {
   return (
     <div className="Navbar">
       <Navbar expand="lg" bg="body-tertiary">
@@ -13,9 +13,9 @@ export default function CustomNavbar() {
             className="shpLogo"
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarNav" />
+        <Navbar.Toggle aria-controls="navbarNav" onClick={handleToggleMenu} />
         <Navbar.Collapse id="navbarNav">
-          <Nav className="justify-content-end">
+          <Nav className="justify-content-center">
             <Nav.Item>
               <Nav.Link href="index.html">Start</Nav.Link>
             </Nav.Item>

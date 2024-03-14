@@ -1,10 +1,19 @@
+import React, { useState } from "react";
 import "./App.css";
 import Main from "./Main";
+import CustomNavbar from "./Navbar";
 
 export default function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleToggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <div className="App">
+    <div className={`App ${isMenuOpen ? "menu-open" : ""}`}>
       <div className="container">
+        <CustomNavbar handleToggleMenu={handleToggleMenu} />
         <Main />
         <footer>
           <div className="footer-content">
