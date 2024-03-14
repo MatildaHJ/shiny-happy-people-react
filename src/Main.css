@@ -1,0 +1,163 @@
+.main,
+.main-landing {
+  width: 100%;
+  height: 70vh;
+  border: var(--border);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  margin: 5px 0;
+}
+p,
+footer {
+  color: white;
+  letter-spacing: 0.25em;
+  font-size: 10px;
+}
+p,
+h2 {
+  line-height: 19px;
+}
+p.personer {
+  margin: 12px 0 24px 0;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.frameOne,
+.frameThree,
+.frameFour {
+  padding: 35px 42px 0 42px;
+}
+.frameOne,
+.frameTwo,
+.frameThree,
+.frameFour,
+.contact-button {
+  grid-column: 1 / 2;
+}
+.frameTwo {
+  font-size: 8px;
+  line-height: 14px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 70%;
+}
+.frameThree,
+.frameFour {
+  width: 82%;
+}
+.contact-button {
+  font-size: 8px;
+  width: 65%;
+  background-color: transparent;
+  color: white;
+  border: var(--border);
+  margin-top: 20px;
+  padding: 10px 10px;
+  font-family: "Red Hat Mono", monospace;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1050px) {
+  .main,
+  .main-landing {
+    height: 65vh;
+    grid-template-columns: 3fr 1fr;
+  }
+  p {
+    font-size: 11px;
+  }
+  .frameOne,
+  .frameThree,
+  .frameFour {
+    padding: 30px 32px 0 32px;
+  }
+  .frameTwo {
+    margin: 0 0 32px 32px;
+    font-size: 9px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 996px) {
+  .main,
+  .main-landing {
+    height: 68vh;
+  }
+  .frameOne,
+  .frameThree,
+  .frameFour {
+    margin-left: 2px;
+    margin-top: -1px;
+  }
+  .frameTwo {
+    margin: 0 15px 10px 14px;
+    width: 93%;
+  }
+  h2 {
+    margin-top: -1px;
+  }
+  p {
+    font-size: 10px;
+    line-height: 19px;
+  }
+}
+@media (max-width: 750px) {
+  .main,
+  .main-landing {
+    grid-template-columns: 1fr;
+  }
+  .main {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .shpLogo {
+    width: 239px;
+    height: 23px;
+  }
+  .frameOne,
+  .frameThree,
+  .frameFour {
+    padding: 10px 10px 0 10px;
+    font-size: 11px;
+    width: 100%;
+  }
+  .frameTwo {
+    padding: 0;
+  }
+  .contact-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 70px;
+    font-size: 14px;
+    width: 180px;
+  }
+}
+@media (max-width: 338px) {
+  .shpLogo {
+    width: 181px;
+    height: 18px;
+  }
+  p {
+    font-size: 9px;
+  }
+  .frameOne,
+  .frameThree,
+  .frameFour {
+    padding: 6px 0 0 6px;
+  }
+  .frameTwo {
+    padding: 0 6px 6px 6px;
+  }
+}
