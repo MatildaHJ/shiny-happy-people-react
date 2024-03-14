@@ -15,8 +15,8 @@ export default function CustomNavbar({ handleToggleMenu }) {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarNav" onClick={handleToggleMenu} />
         <Navbar.Collapse id="navbarNav">
-          <Nav className="justify-content-center">
-            <Nav.Item>
+          <Nav>
+            <Nav.Item className="start">
               <Nav.Link href="index.html">Start</Nav.Link>
             </Nav.Item>
             <Nav.Item>
